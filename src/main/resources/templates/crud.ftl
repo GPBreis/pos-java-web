@@ -12,6 +12,11 @@
 </head>
 <body>
         <nav class="navbar navbar-expand-sm bg-dark">
+        <#if (Session.usuarioAtual)??>
+            <span class="navbar-brand text-white">${Session.usuarioAtual}</span>
+        <#else>
+            <span class="navbar-brand text-white">Anônimo</span>
+        </#if>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a 

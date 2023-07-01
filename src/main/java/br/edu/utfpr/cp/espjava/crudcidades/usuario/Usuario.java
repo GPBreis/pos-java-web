@@ -1,6 +1,5 @@
 package br.edu.utfpr.cp.espjava.crudcidades.usuario;
 
-import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,7 +16,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity(name = "usuario")
-public class Usuario implements Serializable, UserDetails {
+public class Usuario implements UserDetails {
     
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
