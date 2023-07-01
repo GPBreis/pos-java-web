@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a 
+                        href="/logout"
+                        class="nav-link btn btn-secondary"
+                        >Sair da aplicação</a>
+                </li>
+            </ul>
+        </nav>
+
     <div class="container-fluid">
         <div class="jumbotron mt-5">
             <h1>GERENCIAMENTO DE CIDADES</h1>
@@ -40,9 +51,9 @@
                 </div>
             </div>
             <#if cidadeAtual??>
-                <button type="submit" class="btn- btn-warning">CONCLUIR ALTERAÇÃO</button>
+                <button type="submit" class="btn btn-warning">CONCLUIR ALTERAÇÃO</button>
             <#else>
-                <button type="submit" class="btn- btn-primary">CRIAR</button>
+                <button type="submit" class="btn btn-primary">CRIAR</button>
             </#if>
             
         </form>
